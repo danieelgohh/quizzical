@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
-html, body, h1, p {
+html, body, h1, p, fieldset, legend, input {
   margin: 0;
+}
+
+ul, li, fieldset {
+  padding: 0;
 }
 
 body {
@@ -14,6 +18,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 4.688em;
 }
 
 main {
@@ -52,5 +57,53 @@ button {
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-self: start;
+  gap: 0.914em;
+}
+
+section {
+  border-bottom: 0.049em solid #DBDEF0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1rem;
+  color: #293264;
+}
+
+input {
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: start;
+  gap: 0.794em;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  border: 0.077em solid #4D5B9E;
+  border-radius: 0.771em;
+  font-size: 0.615rem;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+}
+
+li.checked {
+  background-color: #D6DBF5;
+}
+
+
+.question-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #293264;
 }
