@@ -53,6 +53,7 @@ button {
   height: 3.25em;
   cursor: pointer;
   border: none;
+  align-self: center;
 }
 
 form {
@@ -101,6 +102,36 @@ li.checked {
   background-color: #D6DBF5;
 }
 
+li.correct {
+  background-color: #94D7A2;
+}
+
+li.incorrect {
+  background-color: #F8BCBC;
+}
+
+#results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25em;
+  gap: 1em;
+}
+
+#results-container > button {
+  font-size: 0.64rem;
+  font-weight: 600;
+  width: 12em;
+  height: 3.5em;
+  padding: 1.1em 2.2em;
+}
+
+#results-container > span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #293264;
+  font-family: Inter, sans-serif;
+}
 
 .question-text {
   font-size: 1rem;
